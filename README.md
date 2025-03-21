@@ -4,6 +4,12 @@
 
 This is a simple Python library for reading smart cards and extracting their unique card serial numbers (CSN). It provides basic functionality to interact with smart card readers and perform operations like selecting AID files and retrieving card serial numbers.
 
+## Installation
+```bash
+pip install CCRE-Card-Unique-ID-Exporter
+```
+
+
 ## Example Usage
 
 ```python
@@ -24,6 +30,12 @@ if reader:
 else:
     print("No reader found.")
 ```
+
+#### Response
+```console
+Card serial number: [n, n, n, n, n, n, n]"
+```
+The card serial number (CSN) returned is an 8-byte list value. This format adheres to international standards for smart card identification, ensuring compatibility across various systems and applications.
 
 ## Dependencies
 
