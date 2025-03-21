@@ -13,6 +13,8 @@ pip install CCRE-Card-Unique-ID-Exporter
 ## Example Usage
 
 ```python
+from ccre_card_unique_id_exporter import find_card_reader, create_new_reader_connection, select_network_aid, get_card_serial_number
+
 # FIND card reader
 reader = find_card_reader()  # or find card reader by get_card_reader_list()
 
@@ -24,8 +26,8 @@ if reader:
     select_network_aid(connection, 'financial')
 
     # GET card serial number
-    csv = get_card_serial_number(connection)
-    print(f"Card serial number: {csv}")
+    csn = get_card_serial_number(connection)
+    print(f"Card serial number: {csn}")
 
 else:
     print("No reader found.")
