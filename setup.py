@@ -18,4 +18,8 @@ setup(
     install_requires=[
         'pyscard', 
     ],
+    extras_require={
+        'dev': ['check-manifest'],
+    },
+    license='MIT',  
 )
