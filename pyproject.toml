@@ -1,43 +1,25 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
-
 [project]
 name = "CCRE_Card_Unique_ID_Exporter"
-version = "0.0.1"
+version = "0.0.2"
 description = "A simple Card Unique ID Exporter"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { file = "LICENSE.txt" }
+license = "MIT"
 keywords = ["APDU", "Smart Card", "IC Card", "USIM", "Credit Card or something else"]
 authors = [
     { name = "taxi_tabby", email = "rkdmf0000@gmail.com" }
 ]
-
 maintainers = [
   { name = "taxi_tabby", email = "rkdmf0000@gmail.com" }
 ]
-
-# Classifiers help users find your project by categorizing it.
-#
-# For a list of valid classifiers, see https://pypi.org/classifiers/
 classifiers = [
-  # How mature is this project? Common values are
-  #   3 - Alpha
-  #   4 - Beta
-  #   5 - Production/Stable
   "Development Status :: 3 - Alpha",
-
   "Intended Audience :: Developers",
-  "Topic :: Software Development :: Build Tools",
-
-  "License :: OSI Approved :: MIT License",
-
+  "Topic :: Software Development :: Libraries :: Python Modules",
   "Programming Language :: Python :: 3",
 ]
-
 dependencies = ["pyscard==2.2.1"]
+
 
 
 [project.optional-dependencies]
@@ -46,5 +28,5 @@ dev = ["check-manifest"]
 
 [project.urls]
 "Homepage" = "https://github.com/taxi-tabby/CCRE_Card_Unique_ID_Exporter"
-"Bug Reports" = "ttps://github.com/taxi-tabby/CCRE_Card_Unique_ID_Exporter/issues"
+
 
