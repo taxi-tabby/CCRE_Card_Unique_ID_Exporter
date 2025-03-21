@@ -1,4 +1,4 @@
-from package.parse import get_hex_description_of_apdu_protocol
+from ccre_card_unique_id_exporter.parse import get_hex_description_of_apdu_protocol
 import smartcard
 from smartcard.System import readers
 from smartcard.CardConnection import CardConnection

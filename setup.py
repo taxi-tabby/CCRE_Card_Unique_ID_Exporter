@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='CCRE_Card_Unique_ID_Exporter',
-    version='0.1',
+    version='0.0.3',
     packages=find_packages(),
     author='taxi-tabby',
     author_email='rkdmf0000@gmail.com',

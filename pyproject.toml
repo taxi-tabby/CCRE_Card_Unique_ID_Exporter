@@ -1,6 +1,6 @@
 [project]
 name = "CCRE_Card_Unique_ID_Exporter"
-version = "0.0.2"
+version = "0.0.3"
 description = "A simple Card Unique ID Exporter"
 readme = "README.md"
 requires-python = ">=3.9"
