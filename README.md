@@ -4,9 +4,43 @@
 
 This is a simple Python library for reading smart cards and extracting their unique card serial numbers (CSN). It provides basic functionality to interact with smart card readers and perform operations like selecting AID files and retrieving card serial numbers.
 
+---
+Please note that the latest updates and information about this library are maintained on GitHub.
+
+
+
 ## Installation
 ```bash
 pip install CCRE-Card-Unique-ID-Exporter
+```
+
+## Method
+```python
+
+# Return reader objects
+get_card_reader_list() -> [object]
+find_card_reader() ->  object contained list
+
+
+# Receive a reader object and create a connection.
+# - param [protocol]
+# 'T0' : T0 APDU communication
+# 'T1' : T1 APDU communication
+# 'RAW' : raw~
+create_new_reader_connection(reader, protocol)
+
+# selc
+# - param [aid_type]
+# financial : credit card
+# direct_cash_card : debit card
+# cyber_cash_card : [Cards present in the card protocol design (not identified)]
+# sign : Certificates in Smart card type
+# distribute : [Cards present in the card protocol design (not identified)]
+select_network_aid(connection, aid_type)
+
+
+# Recognized card's CSN is returned via the APDU protocol
+get_card_serial_number(connection) -> list or something 
 ```
 
 
