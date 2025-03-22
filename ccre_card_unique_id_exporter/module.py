@@ -124,7 +124,7 @@ def select_network_aid(connection, aid_type):
 
 
 # 카드의 CSN을 요청하는 함수
-def get_card_serial_number(connection) -> list:
+def get_card_serial_number(connection) ->  (list | set | None):
     """Sends an APDU command to request the unique card serial number (CSN)."""
 
     # AID 선택 APDU 명령어 생성

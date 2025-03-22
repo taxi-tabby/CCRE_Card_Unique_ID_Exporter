@@ -45,12 +45,6 @@ This library requires the following dependencies:
 
 - `pyscard`: For interacting with smart card readers.
 
-Install dependencies using:
-
-```bash
-pip install pyscard
-```
-
 ## Features
 
 - Detect available smart card readers.
