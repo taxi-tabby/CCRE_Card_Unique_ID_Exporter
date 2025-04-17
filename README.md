@@ -8,6 +8,11 @@ This is a simple Python library for reading smart cards and extracting their uni
 Please note that the latest updates and information about this library are maintained on GitHub.
 
 
+> This card! IC chip attached this thing is compatible one. maybe
+![itsme.png](./___itsme.png)
+
+
+
 
 ## Installation
 ```bash
